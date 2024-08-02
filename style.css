@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color:#372a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Header*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #000046;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1cb5e085, #00004694), url(../BLOG/IMAGENES/ok.jpg);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1cb5e085, #00004694), url(../BLOG/IMAGENES/ok.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #FFFFFF;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #FFFFFF
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Abaut us*/
+
+.globalización{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-about-world{
+    width: 34%;
+}
+.globalización .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #182ace;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow:0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 3px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    text-align: justify;
+}
+
+/*Galeria*/
+
+.portafoliodeglobalización{ 
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom:10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow:0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(231, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #FFFFFF;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*Client*/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .cards{
+    background: #4d0686;
+    display: flex;
+    width: 48%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow:0 0 6px 0 rgba(0, 0, 0, .6);
+}
+
+.cards .cards img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #FFFFFF;
+    border-radius:50%;
+    display: block;
+}
+
+.cards .cards .contenedor-texto-card{
+    width: 60%;
+    color: #FFFFFF;
+}
+
+.cards .cards > .contenedor-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+/*Our team*/
+
+.Concentraciónpobla{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.concen-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.concen2-ind{
+    width: 30%;
+    text-align: center;
+}
+
+.concen2-ind img{
+    width:90%;
+    margin-bottom:10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow:0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.concen2-ind h3{
+    margin: 10px 0;
+}
+
+.concen2-ind p{
+    font-weight: 200;
+    text-align: justify;
+}
+
+
+/*Abaut us*/
+
+.contenedorinicio2{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.globalización2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-about-world2{
+    width: 25%;
+}
+.globalización2 .contenido-textos2{
+    width: 60%;
+}
+
+.contenido-textos2 h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos2 h3 span{
+    background: #1827ce;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow:0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 3px;
+}
+
+.contenido-textos2 p{
+    padding: 0px 0px 30px 15px;
+    text-align: justify;
+}
+
+/*Our team2*/
+
+.Cinturones{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.cin-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cin-ind{
+    width: 48%;
+    text-align: center;
+}
+
+.cin-ind img{
+    width:90%;
+    margin-bottom:10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow:0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.cin-ind h3{
+    margin: 10px 30px;
+}
+
+.cin-ind p{
+    font-weight: 200;
+    text-align: justify;
+}
+
+/*Our team2*/
+
+.ecologistas{
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+
+.eco-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eco-ind{
+    width: 100%;
+    text-align: center;
+}
+
+.eco-ind img{
+    width:100%;
+    margin-bottom:10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.eco-ind h3{
+    margin: 10px 30px;
+}
+
+.eco-ind p{
+    font-weight: 200;
+    text-align: justify;
+}
+
+/*Our team2*/
+
+.ecoturismo{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.tu-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tu-ind{
+    width: 48%;
+    text-align: center;
+}
+
+.tu-ind img{
+    width:90%;
+    margin-bottom:10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.tu-ind h3{
+    margin: 10px 30px;
+}
+
+.tu-ind p{
+    font-weight: 200;
+    text-align: justify;
+}
+
+.tu-ind p{
+    font-weight: 200;
+    text-align: justify;
+}
+
+/*footer*/
+
+footer{
+    background: #414141d3;
+    padding: 60px 0 10px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-final{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #FFFFFF;
+}
